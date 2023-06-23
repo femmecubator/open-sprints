@@ -70,15 +70,34 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            to: '/',
+            label: 'Home',
+            position: 'right',
+            activeBaseRegex: '^/$',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            to: '/collaborate',
+            label: 'Collaborate',
+            position: 'right',
+          },
+          {
+            to: '/volunteer',
+            label: 'Volunteer',
+            position: 'right',
+          },
+          {
+            to: '/partners',
+            label: 'Partners',
+            position: 'right',
+          },
+          {
+            to: '/about-the-org',
+            label: 'About the Org',
+            position: 'right',
+          },
+          {
+            to: '/join-today',
+            label: 'Join Today',
             position: 'right',
           },
         ],
