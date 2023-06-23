@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Work+Sans&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -15,6 +17,15 @@
   --ifm-color-primary-lightest: #6a4dff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-heading-font-family: 'Work Sans', sans-serif;
+  --ifm-font-color-base: #626262;
+  --ifm-navbar-link-color: #333;
+  --ifm-navbar-item-padding-horizontal: 1rem;
+  --ifm-navbar-link-hover-color: var(--ifm-navbar-link-color);
+  --ifm-navbar-padding-vertical: 30px;
+  --ifm-navbar-padding-horizontal: 40px;
+  --ifm-navbar-height: 100px;
 }
 
 /* TODO might be able to remove if we are not using dark theme 👇 */
@@ -28,4 +39,14 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  font-weight: 700;
 }
