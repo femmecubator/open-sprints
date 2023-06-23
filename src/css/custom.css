@@ -8,6 +8,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  /* Infima & docusaurus overrides */
   --ifm-color-primary: #2a00ff;
   --ifm-color-primary-dark: #2600e6;
   --ifm-color-primary-darker: #2400d9;
@@ -26,6 +27,10 @@
   --ifm-navbar-padding-vertical: 30px;
   --ifm-navbar-padding-horizontal: 40px;
   --ifm-navbar-height: 100px;
+
+  /* Custom-defined global vars */
+  --background-gray: #f8f9fc;
+  --black: #000;
 }
 
 /* TODO might be able to remove if we are not using dark theme 👇 */
