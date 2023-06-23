@@ -20,6 +20,19 @@
   color: var(--black);
 }
 
+.howItWorks__title {
+  color: var(--black);
+  font-size: 1.75rem;
+  padding: 48px 24px 12px;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.howItWorks__description {
+  margin-bottom: 48px;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
