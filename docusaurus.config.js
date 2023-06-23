@@ -106,6 +106,11 @@ const config = {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} Open Sprints Built with Docusaurus.`,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
