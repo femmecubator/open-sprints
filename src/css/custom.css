@@ -15,7 +15,7 @@
   --ifm-color-primary-darkest: #1d00b3;
   --ifm-color-primary-light: #3f1aff;
   --ifm-color-primary-lighter: #4a26ff;
-  --ifm-color-primary-lightest: #6a4dff;
+  --ifm-color-primary-lightest: #6e52ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Inter', sans-serif;
@@ -54,4 +54,8 @@
 .navbar__link:hover,
 .navbar__link--active {
   font-weight: 700;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--ifm-color-primary-lightest);
 }
