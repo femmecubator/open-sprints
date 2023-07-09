@@ -76,6 +76,12 @@ const config = {
             activeBaseRegex: '^/$',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'projectsSideBar',
+            position: 'right',
+            label: 'Projects',
+          },
+          {
             to: '/collaborate',
             label: 'Collaborate',
             position: 'right',
