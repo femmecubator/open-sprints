@@ -39,9 +39,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/femmecubator/open-sprints/tree/main/',
+          // TODO 👇 might want to uncomment to turn back on if we want to enable user to edit page
+          // editUrl: 'https://github.com/femmecubator/open-sprints/tree/main/',
           breadcrumbs: false,
         },
         theme: {
