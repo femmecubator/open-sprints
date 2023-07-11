@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[864],{5391:e=>{e.exports=JSON.parse('{"permalink":"/open-sprints/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

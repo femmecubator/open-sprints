@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[999],{1009:(e,n,t)=>{t.r(n),t.d(n,{default:()=>a});var r=t(7294),s=t(7961);function a(){return r.createElement(s.Z,null,r.createElement("main",null,"Partners Page"))}}}]);
