@@ -39,17 +39,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/femmecubator/open-sprints/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/femmecubator/open-sprints/tree/main/packages/create-docusaurus/templates/shared/',
+          // TODO 👇 might want to uncomment to turn back on if we want to enable user to edit page
+          // editUrl: 'https://github.com/femmecubator/open-sprints/tree/main/',
+          breadcrumbs: false,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,6 +66,12 @@ const config = {
             label: 'Home',
             position: 'right',
             activeBaseRegex: '^/$',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'projectsSideBar',
+            position: 'right',
+            label: 'Projects',
           },
           {
             to: '/collaborate',

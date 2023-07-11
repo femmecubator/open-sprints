@@ -27,6 +27,9 @@
   --ifm-navbar-padding-vertical: 30px;
   --ifm-navbar-padding-horizontal: 40px;
   --ifm-navbar-height: 100px;
+  --ifm-menu-color: #222;
+  --ifm-menu-link-padding-vertical: 12px;
+  --ifm-menu-link-padding-horizontal: 24px;
 
   /* Custom-defined global vars */
   --background-gray: #f8f9fc;
@@ -58,4 +61,20 @@
 
 .footer--dark {
   --ifm-footer-background-color: var(--ifm-color-primary-lightest);
+}
+
+.menu__link {
+  font-family: var(----ifm-font-family-base);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.menu__link--active {
+  font-weight: 700;
+}
+
+.menu__link,
+.menu__caret,
+.menu__list-item-collapsible {
+  border-radius: 1rem;
 }
