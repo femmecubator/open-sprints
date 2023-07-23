@@ -15,10 +15,21 @@ roles: ['HTML and CSS Frontend Developer', 'Content Designer']
 ---
 
 import Banner from '@site/src/components/Banner'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 
 <Banner
   goalStatement={frontMatter.goal_statement}
   projectTags={frontMatter.project_tags}
 />
-
-Hello from Project Akita
+<Tabs>
+  <TabItem value="summary" label="Summary" default>
+    Summary Tab
+  </TabItem>
+  <TabItem value="feature-links" label="Feature Links">
+    Feature Links
+  </TabItem>
+  <TabItem value="figma-layouts" label="Figma Layouts">
+    Figma Layouts
+  </TabItem>
+</Tabs>

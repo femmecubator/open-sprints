@@ -79,3 +79,8 @@
 .menu__list-item-collapsible {
   border-radius: 1rem;
 }
+
+.tabs {
+  margin: 0 -1rem;
+  border-bottom: 1px solid var(--docusaurus-highlighted-code-line-bg);
+}
