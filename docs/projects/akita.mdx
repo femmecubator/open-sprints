@@ -3,6 +3,7 @@ id: projects-akita
 title: ''
 sidebar_label: Akita
 sidebar_position: 1
+hide_table_of_contents: true
 
 # Custom-defined frontmatters:
 goal_statement: 'Enabling Async Work using Github Pages and CSS Styled Templates'
@@ -15,6 +16,9 @@ roles: ['HTML and CSS Frontend Developer', 'Content Designer']
 
 import Banner from '@site/src/components/Banner'
 
-<Banner />
+<Banner
+  goalStatement={frontMatter.goal_statement}
+  projectTags={frontMatter.project_tags}
+/>
 
 Hello from Project Akita
