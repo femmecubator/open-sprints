@@ -34,6 +34,7 @@
   /* Custom-defined global vars */
   --background-gray: #f8f9fc;
   --black: #000;
+  --white: #fff;
 }
 
 /* TODO might be able to remove if we are not using dark theme 👇 */
@@ -77,4 +78,9 @@
 .menu__caret,
 .menu__list-item-collapsible {
   border-radius: 1rem;
+}
+
+.tabs {
+  margin: 0 -1rem;
+  border-bottom: 1px solid var(--docusaurus-highlighted-code-line-bg);
 }

@@ -1,8 +1,53 @@
 ---
 id: projects-akita
-title: Akita
+title: ''
 sidebar_label: Akita
 sidebar_position: 1
+hide_table_of_contents: true
+
+# Custom-defined frontmatters:
+goal_statement: 'Enabling Async Work using Github Pages and CSS Styled Templates'
+project_tags: ['Development', 'Github', 'DesignSystem']
+headline: 'Project Akita: Implement and Build Docusaurus CMS Site'
+description: 'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons'
+level_of_difficulty: 'beginner'
+roles: ['HTML and CSS Frontend Developer', 'Content Designer']
+tabs_config:
+  [
+    {
+      value: 'summary',
+      label: 'Summary',
+      isDefault: true,
+      content: 'Summary Tab',
+    },
+    {
+      value: 'feature-links',
+      label: 'Feature Links',
+      isDefault: false,
+      content: 'Feature Links',
+    },
+    {
+      value: 'figma-layouts',
+      label: 'Figma Layouts',
+      isDefault: false,
+      content: 'Figma Layouts',
+    },
+  ]
 ---
 
-Hello from Project Akita
+import Banner from '@site/src/components/Banner'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+<Banner
+  goalStatement={frontMatter.goal_statement}
+  projectTags={frontMatter.project_tags}
+/>
+
+<Tabs>
+  {frontMatter.tabs_config.map(({ value, label, isDefault, content }) => (
+    <TabItem key={value} value={value} label={label} default={isDefault}>
+      {content}
+    </TabItem>
+  ))}
+</Tabs>
