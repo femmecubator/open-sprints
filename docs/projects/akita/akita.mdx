@@ -10,7 +10,7 @@ goal_statement: 'Enabling Async Work using Github Pages and CSS Styled Templates
 project_tags: ['Development', 'Github', 'DesignSystem']
 headline: 'Project Akita: Implement and Build Docusaurus CMS Site'
 description: 'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons'
-level_of_difficulty: 'beginner'
+level_of_difficulty: 'Beginner'
 roles: ['HTML and CSS Frontend Developer', 'Content Designer']
 ---
 
@@ -27,7 +27,12 @@ import Summary from './_summary.mdx'
 
 <Tabs>
   <TabItem value="summary" label="Summary" default>
-    <Summary />
+    <Summary
+      headline={frontMatter.headline}
+      description={frontMatter.description}
+      level={frontMatter.level_of_difficulty}
+      roles={frontMatter.roles}
+    />
   </TabItem>
   <TabItem value="feature-links" label="Feature Links" default>
     Feature Links
