@@ -12,32 +12,13 @@ headline: 'Project Akita: Implement and Build Docusaurus CMS Site'
 description: 'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons'
 level_of_difficulty: 'beginner'
 roles: ['HTML and CSS Frontend Developer', 'Content Designer']
-tabs_config:
-  [
-    {
-      value: 'summary',
-      label: 'Summary',
-      isDefault: true,
-      content: 'Summary Tab',
-    },
-    {
-      value: 'feature-links',
-      label: 'Feature Links',
-      isDefault: false,
-      content: 'Feature Links',
-    },
-    {
-      value: 'figma-layouts',
-      label: 'Figma Layouts',
-      isDefault: false,
-      content: 'Figma Layouts',
-    },
-  ]
 ---
 
 import Banner from '@site/src/components/Banner'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
+
+import Summary from './_summary.mdx'
 
 <Banner
   goalStatement={frontMatter.goal_statement}
@@ -45,9 +26,13 @@ import TabItem from '@theme/TabItem'
 />
 
 <Tabs>
-  {frontMatter.tabs_config.map(({ value, label, isDefault, content }) => (
-    <TabItem key={value} value={value} label={label} default={isDefault}>
-      {content}
-    </TabItem>
-  ))}
+  <TabItem value="summary" label="Summary" default>
+    <Summary />
+  </TabItem>
+  <TabItem value="feature-links" label="Feature Links" default>
+    Feature Links
+  </TabItem>
+  <TabItem value="figma-layouts" label="Figma Layouts">
+    Figma Layouts
+  </TabItem>
 </Tabs>
