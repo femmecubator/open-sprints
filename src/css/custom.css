@@ -81,17 +81,6 @@
 }
 
 .tabs {
-  padding: 0 2rem;
   margin: 0 -1rem;
   border-bottom: 1px solid var(--docusaurus-highlighted-code-line-bg);
-}
-
-div[class^='tabItem'] {
-  padding: 44px 112px;
-}
-
-@media (max-width: 996px) {
-  div[class^='tabItem'] {
-    padding: 44px 32px;
-  }
 }
