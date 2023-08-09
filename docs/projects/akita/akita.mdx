@@ -4,34 +4,27 @@ title: ''
 sidebar_label: Akita
 sidebar_position: 1
 hide_table_of_contents: true
-
-# Custom-defined frontmatters:
-goal_statement: 'Enabling Async Work using Github Pages and CSS Styled Templates'
-project_tags: ['Development', 'Github', 'DesignSystem']
-headline: 'Project Akita: Implement and Build Docusaurus CMS Site'
-description: 'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons'
-level_of_difficulty: 'Beginner'
-roles: ['HTML and CSS Frontend Developer', 'Content Designer']
 ---
 
 import Banner from '@site/src/components/Banner'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
+import configs from '../_configs.ts'
 import Summary from './_summary.mdx'
 
 <Banner
-  goalStatement={frontMatter.goal_statement}
-  projectTags={frontMatter.project_tags}
+  goalStatement={configs.Akita.goal_statement}
+  projectTags={configs.Akita.project_tags}
 />
 
 <Tabs>
   <TabItem value="summary" label="Summary" default>
     <Summary
-      headline={frontMatter.headline}
-      description={frontMatter.description}
-      level={frontMatter.level_of_difficulty}
-      roles={frontMatter.roles}
+      headline={configs.Akita.headline}
+      description={configs.Akita.description}
+      level={configs.Akita.level_of_difficulty}
+      roles={configs.Akita.roles}
     />
   </TabItem>
   <TabItem value="feature-links" label="Feature Links" default>

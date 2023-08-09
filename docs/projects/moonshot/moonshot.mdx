@@ -4,14 +4,6 @@ title: ''
 sidebar_label: Moonshot
 sidebar_position: 2
 hide_table_of_contents: true
-
-# Custom-defined frontmatters:
-goal_statement: 'Launch a Reusable Component Library on Storybook'
-project_tags: ['Development', 'Github', 'DesignSystem']
-headline: 'Project Chihuahua: Implement and Build Docusaurus CMS Site '
-description: 'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.'
-level_of_difficulty: 'Intermediate'
-roles: ['Development', 'Docs', 'React']
 ---
 
 import Banner from '@site/src/components/Banner'
@@ -19,19 +11,20 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 import Summary from './_summary.mdx'
+import configs from '../_configs.ts'
 
 <Banner
-  goalStatement={frontMatter.goal_statement}
-  projectTags={frontMatter.project_tags}
+  goalStatement={configs.Moonshot.goal_statement}
+  projectTags={configs.Moonshot.project_tags}
 />
 
 <Tabs>
   <TabItem value="summary" label="Summary" default>
     <Summary
-      headline={frontMatter.headline}
-      description={frontMatter.description}
-      level={frontMatter.level_of_difficulty}
-      roles={frontMatter.roles}
+      headline={configs.Moonshot.headline}
+      description={configs.Moonshot.description}
+      level={configs.Moonshot.level_of_difficulty}
+      roles={configs.Moonshot.roles}
     />
   </TabItem>
   <TabItem value="feature-links" label="Feature Links" default>
