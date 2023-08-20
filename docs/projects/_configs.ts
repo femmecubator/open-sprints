@@ -1,4 +1,5 @@
 export interface Project {
+  id: string
   goal_statement: string
   project_tags: string[]
   headline: string
@@ -13,6 +14,7 @@ export interface ProjectsConfig {
 
 const projectsConfig: ProjectsConfig = {
   Akita: {
+    id: 'akita',
     goal_statement:
       'Enabling Async Work using Github Pages and CSS Styled Templates',
     project_tags: ['Development', 'Github', 'DesignSystem'],
@@ -23,6 +25,7 @@ const projectsConfig: ProjectsConfig = {
     roles: ['HTML and CSS Frontend Developer', 'Content Designer'],
   },
   Moonshot: {
+    id: 'moonshot',
     goal_statement: 'Launch a Reusable Component Library on Storybook',
     project_tags: ['Development', 'Github', 'DesignSystem'],
     headline: 'Project Chihuahua: Implement and Build Docusaurus CMS Site',
