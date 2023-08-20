@@ -1,18 +1,23 @@
 import React from 'react'
 
+import FilterButton from './FilterButton/';
+import Title from './Title';
+
 import projectsConfig, { ProjectsConfig } from '../../../docs/projects/_configs'
 import styles from './ProjectsPageContent.module.css';
-
 
 const ProjectsPageContent = () => {
     const filters = getUniqueFilters(projectsConfig)
     const buttons = createFilterButtons(filters)
 
+    console.log({ filters })
     return (
         <div>
-            <div className={styles.title}>Filters</div>
-            ProjectsPageContent
-            {buttons}
+            <Title>Filters</Title>
+            <div className={styles.buttons_wrapper}>
+                {buttons}
+            </div>
+            <Title>Projects</Title>
         </div>
     )
 }
@@ -50,9 +55,9 @@ function createFilterButtons(filters: Filters) {
             const value = `${attribute}__${val}`
 
             buttons.push(
-                <button key={value} value={value}>
+                <FilterButton key={value} value={value}>
                     {val}
-                </button>
+                </FilterButton>
             );
         });
     })
