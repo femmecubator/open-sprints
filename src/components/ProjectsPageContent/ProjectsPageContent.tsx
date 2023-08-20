@@ -19,13 +19,15 @@ interface FilterButtonClickEvent {
     target: HTMLButtonElement;
 }
 
+const FILTER_VAL_DELIMITER = '__'
+
 const ProjectsPageContent = () => {
     const [selectedFilter, setSelectedFilter] = useState<null | SelectedFilter>(null)
     const filters = getUniqueFilters(projectsConfig)
     const buttons = createFilterButtons(filters)
 
     function handleFilterButtonClick(e: FilterButtonClickEvent) {
-        const [filter, value] = e.target.value.split('__')
+        const [filter, value] = e.target.value.split(FILTER_VAL_DELIMITER)
         setSelectedFilter({ filter, value })
     }
 
@@ -33,10 +35,11 @@ const ProjectsPageContent = () => {
         const buttons = []
         Object.entries(filters).forEach(([attribute, filterVals]) => {
             filterVals.forEach(val => {
-                const value = `${attribute}__${val}`
+                const value = `${attribute}${FILTER_VAL_DELIMITER}${val}`
+                const isSelected = selectedFilter && selectedFilter.filter === attribute && selectedFilter.value.includes(val)
 
                 buttons.push(
-                    <FilterButton key={value} value={value} onClick={handleFilterButtonClick}>
+                    <FilterButton key={value} value={value} onClick={handleFilterButtonClick} isSelected={isSelected}>
                         {val}
                     </FilterButton>
                 );
