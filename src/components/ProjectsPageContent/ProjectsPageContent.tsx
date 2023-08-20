@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import FilterButton from './FilterButton/';
 import Title from './Title';
@@ -6,11 +6,51 @@ import Title from './Title';
 import projectsConfig, { ProjectsConfig } from '../../../docs/projects/_configs'
 import styles from './ProjectsPageContent.module.css';
 
+interface SelectedFilter {
+    filter: string;
+    value: string;
+}
+
+interface Filters {
+    [key: string]: Set<string>;
+}
+
+interface FilterButtonClickEvent {
+    target: HTMLButtonElement;
+}
+
 const ProjectsPageContent = () => {
+    const [selectedFilter, setSelectedFilter] = useState<null | SelectedFilter>(null)
     const filters = getUniqueFilters(projectsConfig)
     const buttons = createFilterButtons(filters)
 
-    console.log({ filters })
+    function handleFilterButtonClick(e: FilterButtonClickEvent) {
+        const [filter, value] = e.target.value.split('__')
+        setSelectedFilter({ filter, value })
+    }
+
+    function createFilterButtons(filters: Filters) {
+        const buttons = []
+        Object.entries(filters).forEach(([attribute, filterVals]) => {
+            filterVals.forEach(val => {
+                const value = `${attribute}__${val}`
+
+                buttons.push(
+                    <FilterButton key={value} value={value} onClick={handleFilterButtonClick}>
+                        {val}
+                    </FilterButton>
+                );
+            });
+        })
+        return buttons
+    }
+
+    const filteredProjects = Object.values(projectsConfig).filter((projectInfo) => {
+        if (!selectedFilter) return true
+        const currentFilterValue = projectInfo[selectedFilter.filter]
+        return currentFilterValue.includes(selectedFilter.value)
+    })
+
     return (
         <div>
             <Title>Filters</Title>
@@ -18,6 +58,7 @@ const ProjectsPageContent = () => {
                 {buttons}
             </div>
             <Title>Projects</Title>
+            <pre>{JSON.stringify({ filteredProjects }, null, 2)}</pre>
         </div>
     )
 }
@@ -44,25 +85,6 @@ function getUniqueFilters(projectsConfig: ProjectsConfig) {
     return uniqueFilters
 }
 
-interface Filters {
-    [key: string]: Set<string>;
-}
-
-function createFilterButtons(filters: Filters) {
-    const buttons = []
-    Object.entries(filters).forEach(([attribute, filterVals]) => {
-        filterVals.forEach(val => {
-            const value = `${attribute}__${val}`
-
-            buttons.push(
-                <FilterButton key={value} value={value}>
-                    {val}
-                </FilterButton>
-            );
-        });
-    })
-    return buttons
-}
 
 export default ProjectsPageContent
 
