@@ -21,6 +21,7 @@ interface FilterButtonClickEvent {
 }
 
 const FILTER_VAL_DELIMITER = '__'
+const PROJECT_COLORS = ['#FFE0E0', '#FFEDCD', '#DED8FF']
 
 const ProjectsPageContent = () => {
     const [selectedFilter, setSelectedFilter] = useState<null | SelectedFilter>(null)
@@ -49,7 +50,12 @@ const ProjectsPageContent = () => {
         return buttons
     }
 
-    const filteredProjects = Object.values(projectsConfig).filter((projectInfo) => {
+    const projectsWithColor = Object.values(projectsConfig).map((project, idx) => {
+        const color = PROJECT_COLORS[idx % PROJECT_COLORS.length]
+        return ({ color, ...project })
+    })
+
+    const filteredProjects = projectsWithColor.filter((projectInfo) => {
         if (!selectedFilter) return true
         const currentFilterValue = projectInfo[selectedFilter.filter]
         return currentFilterValue.includes(selectedFilter.value)

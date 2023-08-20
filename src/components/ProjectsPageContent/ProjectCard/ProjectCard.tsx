@@ -10,6 +10,7 @@ interface ProjectCardProps extends Project {
 
 const ProjectCard = ({
   id,
+  emoji,
   headline,
   description,
   level_of_difficulty,
@@ -20,7 +21,7 @@ const ProjectCard = ({
 
   return (
     <div className={styles.container}>
-      <div className={styles.banner} style={{ backgroundColor: color }}>😂</div>
+      <div className={styles.banner} style={{ backgroundColor: color }}>{emoji}</div>
       <div className={styles.info_container}>
         <div className={styles.headline}>{headline}</div>
         <div>{description}</div>

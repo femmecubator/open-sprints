@@ -1,6 +1,7 @@
 export interface Project {
   id: string
   goal_statement: string
+  emoji: string
   project_tags: string[]
   headline: string
   description: string
@@ -15,6 +16,7 @@ export interface ProjectsConfig {
 const projectsConfig: ProjectsConfig = {
   Akita: {
     id: 'akita',
+    emoji: '😊',
     goal_statement:
       'Enabling Async Work using Github Pages and CSS Styled Templates',
     project_tags: ['Development', 'Github', 'DesignSystem'],
@@ -26,6 +28,7 @@ const projectsConfig: ProjectsConfig = {
   },
   Moonshot: {
     id: 'moonshot',
+    emoji: '😎',
     goal_statement: 'Launch a Reusable Component Library on Storybook',
     project_tags: ['Development', 'Github', 'DesignSystem'],
     headline: 'Project Chihuahua: Implement and Build Docusaurus CMS Site',
