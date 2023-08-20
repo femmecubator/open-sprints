@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import FilterButton from './FilterButton/';
 import Title from './Title';
+import ProjectCard from './ProjectCard';
 
 import projectsConfig, { ProjectsConfig } from '../../../docs/projects/_configs'
 import styles from './ProjectsPageContent.module.css';
@@ -61,7 +62,13 @@ const ProjectsPageContent = () => {
                 {buttons}
             </div>
             <Title>Projects</Title>
-            <pre>{JSON.stringify({ filteredProjects }, null, 2)}</pre>
+
+            <div className={styles.projects_wrapper}>
+                {filteredProjects.map((project, idx) => (
+                    <ProjectCard key={idx} {...project} />
+                ))}
+            </div>
+
         </div>
     )
 }

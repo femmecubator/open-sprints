@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   goal_statement: string
   project_tags: string[]
   headline: string
@@ -29,7 +29,7 @@ const projectsConfig: ProjectsConfig = {
     description:
       'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.',
     level_of_difficulty: 'Intermediate',
-    roles: ['Development', 'Docs', 'React'],
+    roles: ['Designer', 'React Developer'],
   },
 }
 

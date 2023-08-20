@@ -1,0 +1,27 @@
+.container {
+  width: 326px;
+}
+
+.banner {
+  padding: 30px;
+  height: 150px;
+  font-size: 3rem;
+  text-align: center;
+  overflow: hidden;
+  border: 2px solid #e1e1e1;
+  border-bottom: none;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.info_container {
+  padding: 30px 30px 44px;
+  border: 2px solid #e1e1e1;
+  border-radius: 0px 0px 16px 16px;
+  border-top: none;
+}
+
+.headline {
+  color: var(--ifm-font-color-base);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
