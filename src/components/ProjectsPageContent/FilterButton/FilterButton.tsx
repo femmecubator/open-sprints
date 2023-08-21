@@ -11,7 +11,7 @@ interface FilterButtonProps {
 
 const FilterButton = ({ children, value, onClick, isSelected, ...props }: FilterButtonProps) => {
   return (
-    <button {...props} value={value} className={`${styles.button} ${isSelected ? styles.selected : null}`} onClick={onClick}>
+    <button {...props} value={value} className={styles.button} onClick={onClick} style={{ textDecoration: isSelected && 'underline' }}>
       {children}
     </button>
   );
