@@ -1,42 +1,44 @@
-export interface Project {
-  id: string
-  goal_statement: string
-  emoji: string
-  project_tags: string[]
-  headline: string
-  description: string
-  level_of_difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
-  roles: string[]
-}
+type LevelOfDiffulty = "Beginner" | "Intermediate" | "Advanced";
 
-export interface ProjectsConfig {
-  [key: string]: Project
-}
+export type Project = {
+  id: string;
+  goal_statement: string;
+  emoji: string;
+  project_tags: string[];
+  headline: string;
+  description: string;
+  level_of_difficulty: LevelOfDiffulty;
+  roles: string[];
+};
 
-const projectsConfig: ProjectsConfig = {
+export type ProjectsConfigProps = {
+  [key: string]: Project;
+};
+
+const projectsConfigValue = {
   Akita: {
-    id: 'akita',
-    emoji: '😊',
+    id: "akita",
+    emoji: "😊",
     goal_statement:
-      'Enabling Async Work using Github Pages and CSS Styled Templates',
-    project_tags: ['Development', 'Github', 'DesignSystem'],
-    headline: 'Project Akita: Implement and Build Docusaurus CMS Site',
+      "Enabling Async Work using Github Pages and CSS Styled Templates",
+    project_tags: ["Development", "Github", "DesignSystem"],
+    headline: "Project Akita: Implement and Build Docusaurus CMS Site",
     description:
-      'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons',
-    level_of_difficulty: 'Beginner',
-    roles: ['HTML and CSS Frontend Developer', 'Content Designer'],
+      "Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons",
+    level_of_difficulty: "Beginner",
+    roles: ["HTML and CSS Frontend Developer", "Content Designer"],
   },
   Moonshot: {
-    id: 'moonshot',
-    emoji: '😎',
-    goal_statement: 'Launch a Reusable Component Library on Storybook',
-    project_tags: ['Development', 'Github', 'DesignSystem'],
-    headline: 'Project Chihuahua: Implement and Build Docusaurus CMS Site',
+    id: "moonshot",
+    emoji: "😎",
+    goal_statement: "Launch a Reusable Component Library on Storybook",
+    project_tags: ["Development", "Github", "DesignSystem"],
+    headline: "Project Chihuahua: Implement and Build Docusaurus CMS Site",
     description:
-      'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.',
-    level_of_difficulty: 'Intermediate',
-    roles: ['Designer', 'React Developer'],
+      "Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.",
+    level_of_difficulty: "Intermediate",
+    roles: ["Designer", "React Developer"],
   },
-}
+} satisfies ProjectsConfigProps;
 
-export default projectsConfig
+export default projectsConfigValue;

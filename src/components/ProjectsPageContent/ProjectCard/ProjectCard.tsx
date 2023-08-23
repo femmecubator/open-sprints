@@ -4,9 +4,9 @@ import { useHistory } from '@docusaurus/router';
 import { Project } from '@site/docs/projects/_configs'
 import styles from './ProjectCard.module.css'
 
-interface ProjectCardProps extends Project {
+type ProjectCardProps = {
   color?: string
-}
+} & Project;
 
 const ProjectCard = ({
   id,

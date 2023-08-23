@@ -1,20 +1,34 @@
-import React from 'react'
+import React from "react";
 
-import styles from './FilterButton.module.css'
+import styles from "./FilterButton.module.css";
 
-interface FilterButtonProps {
-  children: React.ReactNode;
-  value: string;
-  onClick: (e) => void;
+type ButtonType = "button" | "submit" | "reset";
+
+export interface FilterButtonProps extends React.HTMLProps<HTMLButtonElement> {
   isSelected: boolean;
+  type?: ButtonType;
 }
 
-const FilterButton = ({ children, value, onClick, isSelected, ...props }: FilterButtonProps) => {
+const FilterButton = ({
+  children,
+  value,
+  onClick,
+  isSelected,
+  type = "button",
+  ...props
+}: FilterButtonProps) => {
   return (
-    <button {...props} value={value} className={styles.button} onClick={onClick} style={{ textDecoration: isSelected && 'underline' }}>
+    <button
+      {...props}
+      value={value}
+      className={styles.button}
+      type={type}
+      onClick={onClick}
+      style={{ textDecoration: isSelected && "underline" }}
+    >
       {children}
     </button>
   );
 };
 
-export default FilterButton
+export default FilterButton;
