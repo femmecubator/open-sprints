@@ -1,0 +1,14 @@
+.buttons_wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 0px 64px;
+  flex-wrap: wrap;
+}
+
+.projects_wrapper {
+  display: flex;
+  gap: 54px;
+  margin: 0px 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
