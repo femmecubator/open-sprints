@@ -28,12 +28,12 @@ const projectsConfigValue = {
     level_of_difficulty: "Beginner",
     roles: ["HTML and CSS Frontend Developer", "Content Designer"],
   },
-  Moonshot: {
-    id: "moonshot",
+  beagle: {
+    id: "beagle",
     emoji: "😎",
     goal_statement: "Launch a Reusable Component Library on Storybook",
     project_tags: ["Development", "Github", "DesignSystem"],
-    headline: "Project Chihuahua: Implement and Build Docusaurus CMS Site",
+    headline: "Project Beagle: Hacking A Design System Component Library",
     description:
       "Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.",
     level_of_difficulty: "Intermediate",
