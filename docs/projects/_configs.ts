@@ -21,7 +21,7 @@ const projectsConfigValue = {
     emoji: "😊",
     goal_statement:
       "Enabling Async Work using Github Pages and CSS Styled Templates",
-    project_tags: ["Development", "Github", "DesignSystem"],
+    project_tags: ["Development", "Github", "Docusaurus", "Documentation"],
     headline: "Project Akita: Implement and Build Docusaurus CMS Site",
     description:
       "Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons",
@@ -32,10 +32,10 @@ const projectsConfigValue = {
     id: "beagle",
     emoji: "😎",
     goal_statement: "Launch a Reusable Component Library on Storybook",
-    project_tags: ["Development", "Github", "DesignSystem"],
+    project_tags: ["Development", "Design", "Github", "DesignSystem", "Figma"],
     headline: "Project Beagle: Hacking A Design System Component Library",
     description:
-      "Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons.",
+      "Join this squad to build a component libraries to be created on Figma and deployed on Storybook. This Design System demo site will be developed for the WeSparkle Brand.",
     level_of_difficulty: "Intermediate",
     roles: ["Designer", "React Developer"],
   },
