@@ -6,6 +6,9 @@ on:
       - main
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
 
 jobs:
   deploy:
@@ -20,6 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Clear previous build (if any)
+        run: yarn clear
       - name: Build website
         run: yarn build
 
