@@ -4,10 +4,10 @@ import styles from "./FilterButton.module.css";
 
 type ButtonType = "button" | "submit" | "reset";
 
-export interface FilterButtonProps extends React.HTMLProps<HTMLButtonElement> {
+export type FilterButtonProps = React.HTMLProps<HTMLButtonElement> & {
   isSelected: boolean;
   type?: ButtonType;
-}
+};
 
 const FilterButton = ({
   children,
