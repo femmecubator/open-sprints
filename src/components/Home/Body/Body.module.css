@@ -1,0 +1,23 @@
+.container {
+  padding: 48px 96px 48px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  padding: 24px;
+  color: #337;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 83.333% */
+  border: none;
+  background: transparent;
+  /* border-bottom: 4px solid #337; */
+  cursor: pointer;
+}
