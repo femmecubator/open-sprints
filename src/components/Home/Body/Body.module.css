@@ -15,9 +15,34 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 83.333% */
+  line-height: 20px;
   border: none;
   background: transparent;
-  /* border-bottom: 4px solid #337; */
   cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+  margin: 96px 0;
+  font-family: Inter;
+}
+
+.content__large {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.content__medium {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50px; /* 178.571% */
+}
+
+.content__small {
+  font-size: 20px;
+  font-weight: 700;
 }
