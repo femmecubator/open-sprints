@@ -74,26 +74,6 @@ const config = {
             label: 'Projects',
           },
           {
-            to: '/collaborate',
-            label: 'Collaborate',
-            position: 'right',
-          },
-          {
-            to: '/volunteer',
-            label: 'Volunteer',
-            position: 'right',
-          },
-          {
-            to: '/partners',
-            label: 'Partners',
-            position: 'right',
-          },
-          {
-            to: '/about-the-org',
-            label: 'About the Org',
-            position: 'right',
-          },
-          {
             to: '/join-today',
             label: 'Join Today',
             position: 'right',
