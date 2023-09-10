@@ -32,7 +32,6 @@ const ProjectCard = ({
           </u>
         </div>
         <button className={styles.join_button} onClick={() => history.push(id)}>Join this project</button>
-
       </div>
     </div>
   )
