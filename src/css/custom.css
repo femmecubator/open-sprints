@@ -56,13 +56,14 @@
   font-size: 1rem;
 }
 
+.navbar__logo {
+  height: 3rem;
+  margin-left: 48px;
+}
+
 .navbar__link:hover,
 .navbar__link--active {
   font-weight: 700;
-}
-
-.footer--dark {
-  --ifm-footer-background-color: var(--ifm-color-primary-lightest);
 }
 
 .menu__link {
@@ -94,5 +95,14 @@ div[class^='tabItem'] {
 @media (max-width: 996px) {
   div[class^='tabItem'] {
     padding: 44px 32px;
+  }
+  .navbar__logo {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: none;
   }
 }
