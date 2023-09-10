@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[9027],{3203:(e,n,t)=>{t.r(n),t.d(n,{default:()=>r});var l=t(7294),a=t(7961);function r(){return l.createElement(a.Z,null,l.createElement("main",null,"Collaborate Page"))}}}]);
