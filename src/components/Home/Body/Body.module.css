@@ -12,7 +12,7 @@
   color: #337;
   text-align: center;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
@@ -31,18 +31,54 @@
 }
 
 .content__large {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 3rem;
 }
 
 .content__medium {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 50px; /* 178.571% */
+  line-height: 3rem;
 }
 
 .content__small {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
+}
+
+.content__image {
+  width: 30%;
+}
+
+@media screen and (max-width: 996px) {
+  .content__large {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+  }
+
+  .content__medium {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+
+  .content__small {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .tab {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+
+  .content__image {
+    width: 40%;
+  }
 }

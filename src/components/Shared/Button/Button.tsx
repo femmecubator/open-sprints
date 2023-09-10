@@ -1,9 +1,16 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-const Button = ({ children, onClick }) => {
+type ButtonType = "button" | "submit" | "reset";
+
+export type ButtonProps = React.HTMLProps<HTMLButtonElement> & {
+  type?: ButtonType;
+};
+
+const Button = ({ children, type = "button", ...props
+}: ButtonProps) => {
   return (
-    <button className={styles.button} onClick={onClick}>{children}</button>
+    <button {...props} type={type} className={styles.button}>{children}</button>
   )
 }
 

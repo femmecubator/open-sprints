@@ -115,7 +115,7 @@ const Body = () => {
 
     <div className={styles.content}>
       <Content />
-      <img src={Image} />
+      <img src={Image} className={styles.content__image} />
     </div>
   </main>
   )
