@@ -80,10 +80,6 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Open Sprints Built with Docusaurus.`,
-      },
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
