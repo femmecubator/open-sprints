@@ -56,6 +56,10 @@
   font-size: 1rem;
 }
 
+.navbar__logo {
+  height: 3rem;
+}
+
 .navbar__link:hover,
 .navbar__link--active {
   font-weight: 700;
