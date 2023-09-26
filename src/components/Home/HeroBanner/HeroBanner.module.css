@@ -1,5 +1,4 @@
 .container {
-  /* padding: 96px 48px; */
   padding: 96px;
 }
 
@@ -42,6 +41,10 @@
 
   .info__img {
     width: 100%;
+  }
+
+  .container {
+    padding: 36px;
   }
 }
 
