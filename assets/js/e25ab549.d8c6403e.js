@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[606],{2298:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/open-sprints/blog/tags/docusaurus","allTagsPath":"/open-sprints/blog/tags","count":4}')}}]);
