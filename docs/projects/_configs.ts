@@ -26,7 +26,7 @@ const projectsConfigValue = {
     description:
       'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons',
     level_of_difficulty: 'Beginner',
-    roles: ['HTML and CSS Frontend Developer', 'Content Designer'],
+    roles: ['Frontend Developer', 'Content Designer'],
   },
   beagle: {
     id: 'beagle',
@@ -37,13 +37,13 @@ const projectsConfigValue = {
     description:
       'Join this squad to build component libraries with elements published Figma. Devs joining this porject will learn to deploy components on Storybook. This Design System demo site will be developed for the WeSparkle Brand.',
     level_of_difficulty: 'Intermediate',
-    roles: ['Designer', 'React Developer'],
+    roles: ['Designer', 'React Developer', 'Developer'],
   },
   corgi: {
     id: 'corgi',
     emoji: '🤗',
     goal_statement: 'Mapping User Journey for Project Aggregator Landing Page',
-    project_tags: ['Research', 'Product Development' ],
+    project_tags: ['Research', 'UX Design', 'Figma' ],
     headline: 'Project Corgi: Mapping User Journey for Project Aggregator Landing Page',
     description: 'Refine and future proof the site’s features driven by UX research methods like User Journey, JBTD and Empathy Maps',
     level_of_difficulty: 'Intermediate',
@@ -55,19 +55,19 @@ const projectsConfigValue = {
     goal_statement: 'Content Design for Design Systems',
     project_tags: ['Content Design', 'Design System', 'Figma'],
     headline: 'Project Dachshund: Intro to Content Design System Workshop',
-    description: 'This intro workshop is an audit work on Content Design Systems. Facilitator will demo a few components audited and guidelined in an Enterprise level.',
+    description: 'This intro workshop is an audit work on Content Design Systems. Learn to content strategy for designs systems in an Enterprise scale.',
     level_of_difficulty: 'Intermediate',
-    roles: ['Content Designer', 'UI Designer', 'Research'],
+    roles: ['Content Designer', 'UI Designer', 'Researcher'],
   },
   eurasier: {
     id: 'eurasier',
     emoji: '🥺',
     goal_statement: 'Accessibility Annotation Tools for Designers',
-    project_tags: ['Development'],
+    project_tags: ['UX Design', 'Accessibility', 'Figma'],
     headline: 'Project Eurasier: Practical Accessibility Tools for Designers',
-    description: 'This workshop, designers will learn the basics of how to annotate their work for accessbility',
+    description: 'In this workshop, designers will learn the basics of how to annotate their work for accessbility',
     level_of_difficulty: 'Beginner',
-    roles: ['UX design', 'Accessibility', 'Figma plugins'],
+    roles: ['UX designer', 'Accessibility Specialist', 'Developer'],
   },
 } satisfies ProjectsConfigProps
 
