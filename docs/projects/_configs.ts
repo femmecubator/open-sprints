@@ -26,7 +26,7 @@ const projectsConfigValue = {
     description:
       'Join this squad to set up a contribution docs site to enable aspiring designers and devs to join open-source project workathons',
     level_of_difficulty: 'Beginner',
-    roles: ['Frontend Developer', 'Content Designer'],
+    roles: ['Developer', 'Content Designer'],
   },
   beagle: {
     id: 'beagle',
@@ -35,7 +35,7 @@ const projectsConfigValue = {
     project_tags: ['Development', 'Design', 'Github', 'DesignSystem', 'Figma'],
     headline: 'Project Beagle: Hacking A Design System Component Library',
     description:
-      'Join this squad to build component libraries with elements published Figma. Devs joining this porject will learn to deploy components on Storybook. This Design System demo site will be developed for the WeSparkle Brand.',
+      'Join this squad to build the Equity UI component library. Developers joining this project will learn to deploy components on Storybook and a sneak peak of the DS process. By the end of the project, a set of 5 components will be built under the WeSparkle Brand Theme.',
     level_of_difficulty: 'Intermediate',
     roles: ['Designer', 'React Developer', 'Developer'],
   },
