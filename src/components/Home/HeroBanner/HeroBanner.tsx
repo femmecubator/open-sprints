@@ -7,7 +7,7 @@ import HeroBannerImage from '@site/static/img/hero-banner-image.png';
 
 const INFO_TEXT = 'A virtual workspace to contribute and collaborate on social good projects'
 const CTA_TEXT = 'Get Started'
-const PROJECTS_PATH = '/open-sprints/docs/projects/'
+const PROJECTS_PATH = '/docs/projects/'
 const HeroBanner = () => {
   const history = useHistory()
 
