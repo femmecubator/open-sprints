@@ -11,7 +11,7 @@ import GetInvolvedImage from '@site/static/img/get-involved-image.png';
 import styles from './Body.module.css'
 import Button from '../../Shared/Button/Button';
 
-const JOIN_TODAY_PATH = '/join-today'
+const JOIN_TODAY_PATH = '/open-sprints/join-today'
 const PURPLE = '#337'
 const ORANGE = '#FC9B6E'
 const PINK = '#F4B4D2'
