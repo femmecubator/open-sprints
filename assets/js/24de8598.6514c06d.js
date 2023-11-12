@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[2960],{6995:e=>{e.exports=JSON.parse('{"permalink":"/open-sprints/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
