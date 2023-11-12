@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopen_sprints=self.webpackChunkopen_sprints||[]).push([[4988],{2289:s=>{s.exports=JSON.parse('{"label":"hello","permalink":"/open-sprints/blog/tags/hello","allTagsPath":"/open-sprints/blog/tags","count":2}')}}]);
