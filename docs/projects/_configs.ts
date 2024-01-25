@@ -62,12 +62,12 @@ const projectsConfigValue = {
   eurasier: {
     id: 'eurasier',
     emoji: '🥺',
-    goal_statement: 'Accessibility Annotation Tools for Designers',
-    project_tags: ['UX Design', 'Accessibility', 'Figma'],
-    headline: 'Project Eurasier: Practical Accessibility Tools for Designers',
-    description: 'In this workshop, designers will learn the basics of how to annotate their work for accessbility',
+    goal_statement: 'Decentralized Web Tools for Designers and Devs',
+    project_tags: ['UX Design', 'Development', 'D.Web'],
+    headline: 'Project Eurasier: Intro to Decentralized Web',
+    description: 'In this workshop, participants will learn about Decentralized Web, its scope and principles',
     level_of_difficulty: 'Beginner',
-    roles: ['UX designer', 'Accessibility Specialist', 'Developer'],
+    roles: ['UX designer', 'Strategist', 'Developer'],
   },
 } satisfies ProjectsConfigProps
 
