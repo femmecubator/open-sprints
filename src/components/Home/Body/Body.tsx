@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useHistory } from '@docusaurus/router';
 
 //@ts-ignore 
@@ -8,63 +8,93 @@ import RoadmapImage from '@site/static/img/roadmap-image.png';
 //@ts-ignore 
 import GetInvolvedImage from '@site/static/img/get-involved-image.png';
 
-import styles from './Body.module.css'
+import styles from './Body.module.css';
 import Button from '../../Shared/Button/Button';
 
-const JOIN_TODAY_PATH = '/join-today'
-const PURPLE = '#337'
-const ORANGE = '#FC9B6E'
-const PINK = '#F4B4D2'
+const JOIN_TODAY_PATH = '/join-today';
+const PURPLE = '#337';
+const ORANGE = '#FC9B6E';
+const PINK = '#F4B4D2';
+const DARK_ORANGE = '#CB7F58';
 
-const AboutTextContent = () => <p className={styles.content__large}>
-  Open Sprints by Femmecubator
-  is a workspace for content editors, designers and developers looking to upskill by contributing to projects within a team environment.
-</p>
+const LinkWithHover = ({ url, children }) => {
+  const [hover, setHover] = React.useState(false);
+  const linkStyle = {
+    textDecoration: "none",
+    color: hover ? DARK_ORANGE : ORANGE,
+  };
 
-const RoadmapTextContent = () => <div>
-  <div className={styles.content__medium}>
-    Summer 2023 - Volunteer Set up and Huddle
-  </div>
-  <p className={styles.content__small}>
-    Open Sprints volunteers begin planning for launch.
+  return (
+    <a 
+      style={linkStyle}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      href={url}
+    >
+      {children}
+    </a>
+  );
+};
+
+const AboutTextContent = () => (
+  <p className={styles.content__large}>
+    Open Sprints by Femmecubator is a workspace for content editors, designers, and developers looking to upskill by contributing to projects within a team environment.
   </p>
-  <br />
-  <br />
-  <div className={styles.content__medium}>
-    Fall 2023 - Workathon Kickoff / Public Soft Launch
+);
+
+const RoadmapTextContent = () => (
+  <div>
+    <div className={styles.content__medium}>Cohort Fellows - Fall 2024</div>
+    <p className={styles.content__small}>
+      Work with mentors in the field, while learning product development via weekly sprints. Recommended for recent grads, aspiring developers, and designers looking to contribute on short-term social good projects (4-8 weeks). Fellows are awarded a learning stipend during the program. By application only.
+    </p>
+    <LinkWithHover url="https://femmecubator.wordpress.com/2023/12/18/open-sprints-fellowship-program">
+      <b>Learn More →</b>
+    </LinkWithHover>
+    <br />
+    <br />
+    <div className={styles.content__medium}>Project Tech Leads / Teaching Assistants - Fall 2024</div>
+    <br />
+    <p className={styles.content__small}>
+      Mentors in the design and development industry are encouraged to meet a total of 2 hours weekly as a fellow coach for 4 weeks. Volunteers get swag and discounted tickets to community-led events such as happy hours and or weekend trainings.
+    </p>
+    <LinkWithHover url="https://www.opensprints.tech/join-today">
+      <b>Join Us →</b>
+    </LinkWithHover>
   </div>
-  <br />
-  <p className={styles.content__small}>
-    At kickoff, we invite 20 Workathon participants to be divided up in 3 teams. We will pitch 3 projects that we are concurrently running for the upcoming season. Mentors will lead the projects and plan out the work in features.
-    <br /><br />
-    Teams will meet monthly to demo progress. Volunteers may sign up once a feature is opened up within project work duration.</p>
-</div>
+);
 
 const GetInvolvedTextContent = () => {
-  const history = useHistory()
-  return (<div>
-    <div className={styles.content__large}>
-      We are looking for
+  const history = useHistory();
+  
+  return (
+    <div>
+      <div className={styles.content__large}>
+        We are looking for
+      </div>
+      <br />
+      <div className={styles.content__medium}>
+        Workathon Participants (Open to BIPOC women only)
+      </div>
+      <br />
+      <p className={styles.content__small}>
+        Work with mentors in the field and learn Agile-driven product development. Recommended for recent grads and aspiring developers and designers looking to contribute on short-term projects
+      </p>
+      <br />
+      <br />
+      <div className={styles.content__medium}>
+        Tech and Design Lead Mentor Residents (Open to Allies)
+      </div>
+      <br />
+      <p className={styles.content__small}>
+        Mentors in design and development industry who have an annual volunteer day are encouraged to meet a total of 2-4 hours per week to coach and give feedback to participant work.
+      </p>
+      <br />
+      <br />
+      <Button onClick={() => history.push(JOIN_TODAY_PATH)}>Apply Today</Button>
     </div>
-    <br />
-    <div className={styles.content__medium}>
-      Workathon Participants (Open to BIPOC women only)
-    </div>
-    <br />
-    <div className={styles.content__small}>
-      Work with mentors in the field and learn Agile-driven product development. Recommended for recent grads and aspiring developers and designers looking contribute on short-term projects  </div>
-    <br />
-    <br />
-    <div className={styles.content__medium}>
-      Tech and Design Lead Mentor Residents (Open to Allies)</div>
-    <br />
-    <div className={styles.content__small}>
-      Mentors in design and development industry who have an annual volunteer day are encouraged to meet a total of 2-4 hours per week to coach and give feedback to participant work.</div>
-    <br />
-    <br />
-    <Button onClick={() => { history.push(JOIN_TODAY_PATH) }}>Apply Today</Button>
-  </div>)
-}
+  );
+};
 
 const TABS_CONFIG = [
   {
@@ -79,16 +109,16 @@ const TABS_CONFIG = [
     Image: RoadmapImage,
     backgroundColor: PURPLE,
     color: ORANGE,
-    Content: RoadmapTextContent
+    Content: RoadmapTextContent,
   },
   {
     name: 'Get Involved',
     Image: GetInvolvedImage,
     backgroundColor: PINK,
     color: PURPLE,
-    Content: GetInvolvedTextContent
+    Content: GetInvolvedTextContent,
   },
-]
+];
 
 const Body = () => {
   const [selectedTab, setSelectedTab] = useState(TABS_CONFIG[0])
