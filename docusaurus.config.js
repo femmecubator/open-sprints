@@ -74,6 +74,11 @@ const config = {
             label: 'Projects',
           },
           {
+            to: '/contributors',
+            label: 'Contributors',
+            position: 'right',
+          },
+          {
             to: '/join-today',
             label: 'Join Today',
             position: 'right',
