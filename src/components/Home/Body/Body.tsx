@@ -25,7 +25,7 @@ const LinkWithHover = ({ url, children }) => {
   };
 
   return (
-    <a 
+    <a
       style={linkStyle}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -42,57 +42,84 @@ const AboutTextContent = () => (
   </p>
 );
 
-const RoadmapTextContent = () => (
-  <div>
-    <div className={styles.content__medium}>Cohort Fellows - Fall 2024</div>
-    <p className={styles.content__small}>
-      Work with mentors in the field, while learning product development via weekly sprints. Recommended for recent grads, aspiring developers, and designers looking to contribute on short-term social good projects (4-8 weeks). Fellows are awarded a learning stipend during the program. By application only.
-    </p>
-    <LinkWithHover url="https://femmecubator.wordpress.com/2023/12/18/open-sprints-fellowship-program">
-      <b>Learn More →</b>
-    </LinkWithHover>
-    <br />
-    <br />
-    <div className={styles.content__medium}>Project Tech Leads / Teaching Assistants - Fall 2024</div>
-    <br />
-    <p className={styles.content__small}>
-      Mentors in the design and development industry are encouraged to meet a total of 2 hours weekly as a fellow coach for 4 weeks. Volunteers get swag and discounted tickets to community-led events such as happy hours and or weekend trainings.
-    </p>
-    <LinkWithHover url="https://www.opensprints.tech/join-today">
-      <b>Join Us →</b>
-    </LinkWithHover>
-  </div>
-);
-
-const GetInvolvedTextContent = () => {
+const FaqsContent = () => {
   const history = useHistory();
-  
+
   return (
     <div>
-      <div className={styles.content__large}>
-        We are looking for
-      </div>
-      <br />
       <div className={styles.content__medium}>
-        Workathon Participants (Open to BIPOC women only)
+        What is Open Sprints?
       </div>
       <br />
       <p className={styles.content__small}>
-        Work with mentors in the field and learn Agile-driven product development. Recommended for recent grads and aspiring developers and designers looking to contribute on short-term projects
+        Open Sprints Project is both an online community and an in-person hackathon event where contributors can join open-source projects, get hands on learning and expand their network.
       </p>
       <br />
       <br />
       <div className={styles.content__medium}>
-        Tech and Design Lead Mentor Residents (Open to Allies)
+        Can I join the project virtually?
       </div>
       <br />
       <p className={styles.content__small}>
-        Mentors in design and development industry who have an annual volunteer day are encouraged to meet a total of 2-4 hours per week to coach and give feedback to participant work.
+        For virtual projects sprints, contributors and project drivers meet through bi-weekly stand-ups to complete the project, one user story at a time. New contributors can get started by scheduling an on onboarding session or the next available standup call as long as there are active and ongoing projects.
       </p>
       <br />
+      <div className={styles.content__medium}>
+        What happens at the Hackathon kickoff?
+      </div>
       <br />
-      <Button onClick={() => history.push(JOIN_TODAY_PATH)}>Apply Today</Button>
+      <p className={styles.content__small}>
+        Active projects are pitched by leads to participants. Attendees and contributors are pre-assigned to projects and sessions before the event. Our goal is to run project pitches in the Spring and Fall season.
+      </p>
+      <br />
+      <div className={styles.content__medium}>
+        Where can I learn more about existing or future projects at Open Sprints?
+      </div>
+      <br />
+      <p className={styles.content__small}>
+        The projects are pre-vetted and proposed within the planning period with Femmecubator mentors and volunteers. Work plans are posted on the Open Sprints site: <a href="https://www.opensprints.tech/docs/projects/">https://www.opensprints.tech/docs/projects/</a>
+      </p>
+      <br />
+      <div className={styles.content__medium}>
+        How do I get started?
+      </div>
+      <br />
+      <p className={styles.content__small}>
+        If you are ready to pick up task or contribute to a specific project, apply to be a volunteer or mentor form online.
+        <br />
+        <br />
+        <Button onClick={() => history.push(JOIN_TODAY_PATH)}>Join Today</Button>
+        <br />
+        <br />
+        We conduct Info Sessions when a hackathon event date is posted. Ping us at <a href="mailto:community@femmecubator.org">community@femmecubator.org</a> for any questions.
+      </p>
+      <br />
     </div>
+  )
+};
+
+const GetInvolvedTextContent = () => {
+  return (
+    <div>
+      <div className={styles.content__medium}>Cohort Fellows - Fall 2024</div>
+      <p className={styles.content__small}>
+        Work with mentors in the field, while learning product development via weekly sprints. Recommended for recent grads, aspiring developers, and designers looking to contribute on short-term social good projects (4-8 weeks). Fellows are awarded a learning stipend during the program. By application only.
+      </p>
+      <LinkWithHover url="https://femmecubator.wordpress.com/2023/12/18/open-sprints-fellowship-program">
+        <b>Learn More →</b>
+      </LinkWithHover>
+      <br />
+      <br />
+      <div className={styles.content__medium}>Project Tech Leads / Teaching Assistants - Fall 2024</div>
+      <br />
+      <p className={styles.content__small}>
+        Mentors in the design and development industry are encouraged to meet a total of 2 hours weekly as a fellow coach for 4 weeks. Volunteers get swag and discounted tickets to community-led events such as happy hours and or weekend trainings.
+      </p>
+      <LinkWithHover url="https://www.opensprints.tech/join-today">
+        <b>Join Us →</b>
+      </LinkWithHover>
+    </div>
+
   );
 };
 
@@ -105,17 +132,18 @@ const TABS_CONFIG = [
     Content: AboutTextContent,
   },
   {
-    name: 'Roadmap',
+    name: 'FAQs',
     Image: RoadmapImage,
-    backgroundColor: PURPLE,
-    color: ORANGE,
-    Content: RoadmapTextContent,
+    backgroundColor: PINK,
+    color: PURPLE,
+    Content: FaqsContent,
   },
   {
     name: 'Get Involved',
     Image: GetInvolvedImage,
-    backgroundColor: PINK,
-    color: PURPLE,
+
+    backgroundColor: PURPLE,
+    color: ORANGE,
     Content: GetInvolvedTextContent,
   },
 ];
