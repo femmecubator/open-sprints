@@ -12,6 +12,8 @@ import styles from './Body.module.css';
 import Button from '../../Shared/Button/Button';
 
 const JOIN_TODAY_PATH = '/join-today';
+const VIEW_PROJECTS_PATH = '/docs/projects';
+
 const PURPLE = '#337';
 const ORANGE = '#FC9B6E';
 const PINK = '#F4B4D2';
@@ -77,7 +79,10 @@ const FaqsContent = () => {
       </div>
       <br />
       <p className={styles.content__small}>
-        The projects are pre-vetted and proposed within the planning period with Femmecubator mentors and volunteers. Work plans are posted on the Open Sprints site: <a href="https://www.opensprints.tech/docs/projects/">https://www.opensprints.tech/docs/projects/</a>
+        The projects are pre-vetted and proposed within the planning period with Femmecubator mentors and volunteers. Work plans are posted on the Open Sprints site.
+        <br />
+        <br />
+        <Button onClick={() => history.push(VIEW_PROJECTS_PATH)}>View Projects</Button>
       </p>
       <br />
       <div className={styles.content__medium}>
