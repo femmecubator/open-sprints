@@ -51,13 +51,14 @@ const projectsConfigValue = {
   },
   dachshund: {
     id: 'dachshund',
+    id: 'foxhound',
     emoji: '😇',
-    goal_statement: 'Content Design for Design Systems',
+    goal_statement: ‘Define and research insights on Equitable Workforce and Hiring Culture',
     project_tags: ['Content Design', 'Design System', 'Figma'],
-    headline: 'Project Dachshund: Intro to Content Design System Workshop',
-    description: 'This intro workshop is an audit work on Content Design Systems. Learn to content strategy for designs systems in an Enterprise scale.',
+    headline: 'Project Foxhound: Research on Inclusive Hiring Culture in Tech',
+    description: 'Identify opportunities to mitigate issues in Tech hiring culture. Refer to Kapor Foundation’s framework an equitable workforce.’,
     level_of_difficulty: 'Intermediate',
-    roles: ['Content Designer', 'UI Designer', 'Researcher'],
+    roles: [‘Strategist’, 'UX Designer', 'Researcher'],
   },
   eurasier: {
     id: 'eurasier',
