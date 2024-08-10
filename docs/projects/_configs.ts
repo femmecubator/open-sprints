@@ -49,8 +49,7 @@ const projectsConfigValue = {
     level_of_difficulty: 'Intermediate',
     roles: ['UX Designer', 'UX Researcher'],
   },
-  dachshund: {
-    id: 'dachshund',
+  foxhound: {
     id: 'foxhound',
     emoji: '😇',
     goal_statement: ‘Define and research insights on Equitable Workforce and Hiring Culture',
