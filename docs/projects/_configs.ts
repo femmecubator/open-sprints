@@ -52,12 +52,12 @@ const projectsConfigValue = {
   foxhound: {
     id: 'foxhound',
     emoji: '😇',
-    goal_statement: ‘Define and research insights on Equitable Workforce and Hiring Culture',
+    goal_statement: 'Define and research insights on Equitable Workforce and Hiring Culture',
     project_tags: ['Content Design', 'Design System', 'Figma'],
     headline: 'Project Foxhound: Research on Inclusive Hiring Culture in Tech',
-    description: 'Identify opportunities to mitigate issues in Tech hiring culture. Refer to Kapor Foundation’s framework an equitable workforce.’,
+    description: 'Identify opportunities to mitigate issues in Tech hiring culture. Refer to Kapor Foundation’s framework an equitable workforce.',
     level_of_difficulty: 'Intermediate',
-    roles: [‘Strategist’, 'UX Designer', 'Researcher'],
+    roles: ['Strategist', 'UX Designer', 'Researcher'],
   },
   eurasier: {
     id: 'eurasier',
