@@ -55,7 +55,7 @@ const projectsConfigValue = {
     goal_statement: 'Define and research insights on Equitable Workforce and Hiring Culture',
     project_tags: ['Content Design', 'Design System', 'Figma'],
     headline: 'Project Foxhound: Research on Inclusive Hiring Culture in Tech',
-    description: 'Identify opportunities to mitigate issues in Tech hiring culture. Refer to Kapor Foundation’s framework an equitable workforce.',
+    description: 'Identify opportunities to mitigate issues in Tech hiring culture. Refer to Kapor Foundation’s Equitable Tech Workforce framework.',
     level_of_difficulty: 'Intermediate',
     roles: ['Strategist', 'UX Designer', 'Researcher'],
   },
