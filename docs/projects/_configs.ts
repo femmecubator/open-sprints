@@ -69,6 +69,26 @@ const projectsConfigValue = {
     level_of_difficulty: 'Beginner',
     roles: ['UX designer', 'Strategist', 'Developer'],
   },
+  greatdane: {
+    id: 'greatdane',
+    emoji: '🗺️',
+    goal_statement: 'Equitable Mapping: Create a service that enables volunteers to submit Data Topics for visualization',
+    project_tags: ['Data Science', 'Web Development', 'Data Viz'],
+    headline: 'Project Great Dane: Using Conversational AI to Bridge Academia and Tech',
+    description: 'The goal of this hackathon is to design a prototype for an interactive map that incorporates key indicators from NYC’s Open Data portal.',
+    level_of_difficulty: 'Beginner', 
+    roles: ['Web Developer', 'Data Scientist', 'Researcher'], 
+  },
+  husky: {
+    id: 'husky',
+    emoji: '🗣',
+    goal_statement: 'Conversational AI: Create a chatbot to support families of kids with Autism',
+    project_tags: ['Gen AI', 'Content Strategy', 'UX Research'],
+    headline: 'Project Husky: Using Conversational AI to Bridge Academia and Tech',
+    description: 'In this project, the team needs to set up an initial landing page to communicate the goals and plan for a chatbot service.',
+    level_of_difficulty: 'Beginner',
+    roles: ['UX Designer', 'Content Designer', 'Researcher'],
+  },
 } satisfies ProjectsConfigProps
 
 export default projectsConfigValue
