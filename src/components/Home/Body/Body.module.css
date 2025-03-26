@@ -47,6 +47,10 @@
   font-weight: 700;
 }
 
+.content__link {
+  color: #F4B4D2;
+}
+
 .content__image {
   width: 30%;
 }
